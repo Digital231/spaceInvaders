@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+}
+
+.title,
+.score,
+.upgrades {
+  background: -webkit-linear-gradient(
+    90deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.hp-bar {
+  width: 70px; /* Width of the HP bars */
+  height: 600px; /* Full height to match the canvas */
+  border: 3px solid black;
+  position: relative;
+}
+
+.hp-filler {
+  width: 100%; /* Filler takes full width of its container */
+  position: absolute;
+  bottom: 0; /* Aligns the filler to the bottom of its container */
+}
+
+.player-hp .hp-filler {
+  background-color: green;
+}
+
+.enemy-hp .hp-filler {
+  background-color: red;
+}
+
+.player-hp {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  margin: 5px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.enemy-hp {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  margin: 5px;
+  font-family: "Press Start 2P", cursive;
+}
